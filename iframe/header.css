@@ -49,6 +49,10 @@ nav ul li a:hover {
 
 }
 
+nav ul li a:active {
+    background-color: aliceblue;
+}
+
 /* Responsivity */
 
 @media screen and (max-width: 600px) {
