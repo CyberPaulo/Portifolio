@@ -9,51 +9,28 @@ body {
     padding: 0;
 }
 
-header h1 {
-    text-align: center;
-    color: rgb(230, 230, 230);
-    font-family: 'Great Vibes', cursive;
-    font-size: 25px;
-    padding: 15px;
+header {
+    display:block;
+    overflow:hidden;
+    width:100%;
+    height:100px;
 }
 
-nav {
-    text-align: center;
+hr {
+    width: 50%;
+    height: 0.5px;
+    border: 0;
+    background-color:rgb(141, 129, 6);
+    display: block;
 }
 
-ul {
-    display: flex;
-    display: inline-block;
-    padding: 0 0 10px;
-}
-
-nav ul li {
-    display: inline;
-    text-decoration: none;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 12px;
-    text-align: center;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+.hr {
     padding: 10px;
-    transition: text-shadow 0.2;
-    justify-content: center;
 }
 
-nav ul li a:hover {
-    text-shadow: 0 0 0px white;
-    transform: translateY(5px);
-
-}
-
-#hr {
-    padding: 0 0 10px;
-}
 
 .cards {
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -67,15 +44,12 @@ nav ul li a:hover {
 
 @media screen and (min-width: 600px) {
     .cards { grid-template-columns: repeat(2, 1fr); }
-    .signature { font-size: px; }
-    nav ul li { font-size: 20px;}
-    #hr { padding: 0 0 15px;}
+    header {height: 90px;}
+
 }
 
 
 @media screen and (min-width: 900px) {
-    .cards { grid-template-columns: repeat(3, 1fr); }
-    .signature { font-size: 50px; }
-    nav ul li { font-size: 25px;}
-    #hr { padding: 0 0 20px;}
+    .cards {grid-template-columns: repeat(3, 1fr);}
+    header { height: 110px;}
 }

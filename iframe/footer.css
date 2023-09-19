@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+#social-links {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 24px;
+    width: 60%;
+}
+
+#social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px 0;
+    color: white;
+}
+
+#social-container p {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* Resposivity */
+
+@media screen and ( max-width: 600px ) {
+    #social-links { font-size: 20px; padding: 10px;}
+    #social-container p { font-size: 12px; padding: 10px; }
+} 
