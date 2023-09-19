@@ -58,10 +58,6 @@ figure img {
     margin: auto;
 }
 
-figure img:hover {
-    transform:scale(1.05);
-}
-
 .description {
     position: relative;
     text-align: center;
