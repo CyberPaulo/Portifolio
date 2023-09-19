@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin: 0 auto;
 }
 
@@ -21,11 +21,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 15px 15px 0;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #social-container p {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 15px;
     padding: 10px;
 }
