@@ -9,6 +9,7 @@ body {
     padding: 0;
 }
 
+
 header a {
     text-decoration: none;
 }
@@ -55,6 +56,18 @@ nav ul li a:hover {
 
 nav ul li a:active {
     background-color: none;
+}
+
+hr {
+    width: 50%;
+    height: 0.5px;
+    border: 0;
+    background-color:rgb(141, 129, 6);
+    display: block;
+}
+
+.hr {
+    padding: 10px;
 }
 
 /* Responsivity */
