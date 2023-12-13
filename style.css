@@ -166,9 +166,9 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
-    .cards {grid-template-columns: repeat(3, 1fr);}
+    .cards {grid-template-columns: repeat(2, 1fr);}
     header { height: 110px; } 
-    .iframe-header { height: 115px; }
+    .iframe-header { height: 110px; }
 }
 
 
