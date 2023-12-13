@@ -10,32 +10,69 @@ body {
     padding: 0;
 }
 
+/* Header */
+
 header {
     display:block;
     overflow:hidden;
     width:100%;
-    height:100px;
+    height:90px;
 }
 
-.iframe-header {
-        overflow:hidden;
-        position: fixed;
-        z-index: 1;
-        width: 100%;
-        height: 100px;
+#header-top {
+    color: white;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    margin: 5px;
+}
+
+nav {
+    position: relative;
+    display: flex;  
+    margin: 10px 0px 10px;
+}
+
+nav ul {
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: rgb(45, 44, 44);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0px 25px 0;
+    transition: text-shadow 0.2;
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 0px white;
+    transform: translateY(5px);
 }
 
 hr {
-    width: 50%;
+    display: block;
+    width: 70%;
     height: 0.5px;
     border: 0;
     background-color:rgb(141, 129, 6);
-    display: block;
 }
 
 .hr {
-    padding: 10px;
+    padding: 0px 0px 10px;
 }
+
+/* main */
+
 
 
 .cards {
@@ -77,11 +114,49 @@ footer {
     height: 100px;
 }
 
+/* footer */
+
+#social-links {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 24px;
+    width: 60%;
+}
+
+#social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px 0;
+    color: rgb(255, 255, 255);
+}
+
+#social-container p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* header */
+@media screen and (max-width: 600px) {
+    .signature { font-size: 35px;}
+    nav ul li { padding: 1px;}
+    nav ul li a { font-size: 16px; padding: 0px 5px 0px; }
+    header { height: 90px; }
+}
+
+
+@media screen and (min-width: 900px) {
+    .signature {font-size: 45px;}
+    nav ul li a {font-size: 25px; padding: 10px;}
+}
+
+/* main */
+
 @media screen and (max-width: 600px) {
     .cards { grid-template-columns: repeat(1, 1fr); }
 
-    header { height: 100px; }
-    .iframe-header { height: 105px; }
     .card { height: 360px; flex-direction: column; }
     
     figure { width: 100%; height: 300px; }
@@ -102,3 +177,10 @@ footer {
     header { height: 120px; } 
     .iframe-header { height: 125px; }
 }
+
+/* footer */
+
+@media screen and ( max-width: 600px ) {
+    #social-links { font-size: 20px; padding: 10px;}
+    #social-container p { font-size: 12px; padding: 10px; }
+} 
