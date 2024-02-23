@@ -1,13 +1,29 @@
-body {
-    background-color: rgb(0, 0, 0);
-    margin: 0 auto;
-    z-index: 0;
-}
+
 
 * {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
+}
+
+:root {
+    --bg-color: rgb(0, 0, 0);
+    --text-color: rgb(255, 255, 255);
+    --social-links: rgb(255, 255, 255);
+    --desciption: rgb(123, 122, 116);
+} 
+
+.light {
+    --bg-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 0, 0);
+    --social-links: rgb(0, 0, 0);
+    --desciption: rgb(123, 122, 116);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    z-index: 0;
 }
 
 /* Header */
@@ -59,6 +75,23 @@ nav ul li a:hover {
     transform: translateY(5px);
 }
 
+/* swicth */
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    animation: slide-back 0.2s;
+}
+
 hr {
     display: block;
     width: 70%;
@@ -72,8 +105,6 @@ hr {
 }
 
 /* main */
-
-
 
 .cards {
     position: relative;
